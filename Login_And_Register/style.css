@@ -1,0 +1,271 @@
+:root{
+    --whiter_color: #e4e4e4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #020410;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    height: 100%;
+    width: 1200px;
+}
+
+/* /\/\/\/\/\/\ */
+.header{
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+/* |||| */
+.header_left > ul{
+    display: flex;
+    align-items: center;
+}
+.header_left > ul > li{
+    list-style: none;
+    padding: 5px 0;
+    margin: 0 10px;
+    position: relative;
+}
+.header_left > ul > li::after{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--whiter_color);
+    opacity: 0;
+    transition: .3s all ease;
+}
+.header_left > ul > li:hover::after{
+    bottom: 0px;
+    opacity: 1;
+}
+.header_left > ul > li > a{
+    text-decoration: none;
+    color: var(--whiter_color);
+    font-weight: bold;
+}
+
+/* |||| */
+.header_right > .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 250px;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+}
+.header_right > .search > input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--whiter_color);
+    background: transparent;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.header_right > .search > input::placeholder{
+    color: var(--whiter_color);
+}
+.header_right > .search > button{
+    width: 40px;
+    height: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.header_right > .search > button > i{
+    color: var(--whiter_color);
+    font-size: 22px;
+}
+
+/* \/\/\/\/\/\/ */
+
+.container{
+    height: 550px;
+    width: 100%;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.content{
+    height: 100%;
+    width: 65%;
+    color: var(--whiter_color);
+    padding: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content > h1{
+    font-size: 30px;
+    padding: 0 0 20px 0;
+}
+.content > .textContent{
+    margin-top: 100px;
+}
+.content > .textContent > h2{
+    font-size: 40px;
+}
+.content > .textContent > h2 span{
+    font-size: 25px;
+}
+.content > .textContent > p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.contactOnline{
+    margin: 20px 0;
+}
+.contactOnline a{
+    text-decoration: none;
+    color: unset;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid var(--whiter_color);
+    border-radius: 5px;
+}
+
+/* /\/\/\/\/\/\ */
+
+.logreg_box{
+    height: 100%;
+    width: calc(100% - 65%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+.form_box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    color: var(--whiter_color);
+    position: absolute;
+}
+.login h2{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.login .inputBox{
+    width: 350px;
+    height: 50px;
+    border-bottom: 2px solid var(--whiter_color);
+    margin: 30px 0;
+    position: relative;
+}
+.login .inputBox > input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    padding-right: 30px;
+    color: var(--whiter_color);
+    transition: .5s ease;
+}
+
+.login .inputBox label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-weight: bold;
+    pointer-events: none;
+}
+.inputBox input:focus~label,
+.inputBox input:valid~label{
+    top: -5px;
+}
+
+.login .inputBox .icon{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    font-size: 18px;
+}
+
+.remember_forgot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.remember_forgot a{
+    color: unset;
+} 
+
+button{
+    padding: 10px;
+    width: 100%;
+    background-color: #c4103d; 
+    border: none;
+    outline: none;
+    border-radius: 5px; 
+    margin: 20px 0;  
+    cursor: pointer;
+    color: var(--whiter_color);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.login_register{
+    text-align: center;
+
+}
+.login_register span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.logreg_box .form_box.signin{
+    transform: translateX(0);
+    transition: transform .5s ease;
+    transition-delay: .5s;
+}
+.logreg_box.active .form_box.signin{
+    transform: translateX(420px);
+    transition-delay: 0s;
+}
+
+.logreg_box .form_box.register{
+    transform: translateX(420px);
+    transition: transform .5s ease;
+    transition-delay: 0s;
+}
+.logreg_box.active .form_box.register{
+    transform: translateX(0);
+    transition-delay: .5s;
+}
+
+
+.form_box.register{
+    transform: translateX(420px);
+}

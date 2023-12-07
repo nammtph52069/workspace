@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN AND REGISTER</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<body>
+    <div class="main">
+        <div class="header">
+            <!-- || -->
+            <div class="header_left">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <!-- || -->
+            <div class="header_right">
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <button>
+                        <i class='bx bx-search-alt-2'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- \/\/\/\/\/ -->
+        <div class="container">
+            <div class="content">
+                <h1>Thenam</h1> 
+                <div class="textContent">
+                    <h2>Welcome! <br> <span>To Our New Website</span> </h2>
+                    <p>This is a website that shows login and account registration information</p>
+                    <div class="contactOnline">
+                        <a href=""><i class='bx bxl-linkedin'></i></a>
+                        <a href=""><i class='bx bxl-facebook' ></i></a>
+                        <a href=""><i class='bx bxl-instagram' ></i></a>
+                        <a href=""><i class='bx bxl-twitter' ></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logreg_box">
+                <div class="form_box signin">
+                    <form action="#">
+                        <div class="login">
+                            <h2>Sign in</h2>
+                            <div class="inputBox">
+                                <span class="icon"><i class='bx bx-envelope'></i></span>
+                                <input type="email" required>
+                                <label>Email</label>
+                            </div>
+
+                            <div class="inputBox">
+                                <span class="icon"><i class='bx bx-lock'></i></span>
+                                <input type="password" required>
+                                <label>Password</label>
+                            </div>
+                            
+                            <div class="remember_forgot">
+                                <label> <input type="checkbox"> Remember me </label>
+                                <a href="">Forgot password?</a>
+                            </div>
+                            <button>Sign in</button>
+                            <div class="login_register">
+                                <p>Don't have an account? <span class="registerLink">Register</span></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Register -->
+            
+                <div class="form_box register">
+                    <form action="#">
+                        <div class="login">
+                            <h2>Sign Up</h2>
+
+                            <div class="inputBox">
+                                <span class="icon"><i class='bx bx-user' ></i></span>
+                                <input type="password" required>
+                                <label>Name</label>
+                            </div>
+
+                            <div class="inputBox">
+                                <span class="icon"><i class='bx bx-envelope'></i></span>
+                                <input type="email" required>
+                                <label>Email</label>
+                            </div>
+
+                            <div class="inputBox">
+                                <span class="icon"><i class='bx bx-lock'></i></span>
+                                <input type="password" required>
+                                <label>Password</label>
+                            </div>
+
+                            <div class="remember_forgot">
+                                <label> <input type="checkbox"> I agree to the term & conditions</label>
+                            </div>
+                            <button>Sign Up</button>
+                            <div class="login_register">
+                                <p>Already have an account? <span class="loginLink">Sign In</span></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
