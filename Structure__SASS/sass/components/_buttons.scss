@@ -1,0 +1,29 @@
+.btn{
+    border: 1px solid #000;
+    color: $CL-button;
+    background-color: $BG-button;
+    transition: all .15s;
+}
+
+.btn:hover{
+    color: $CL-button-hv;
+    background-color: $BG-button-hv;
+    cursor: pointer;
+}
+
+.btn-border-none{
+    border: none;
+}
+
+.btn-primary{
+    color: $CL-button-primary;
+    background-color: $BG-button-primary;
+}
+
+.rounded-sm{
+    border-radius: .5rem;
+}
+
+.rounded-full{
+    border-radius: 1rem;
+}

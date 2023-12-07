@@ -1,0 +1,35 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ol, 
+ul{
+    list-style: none;
+}
+
+.mg-0{
+    margin: 0;
+}
+.pd-0{
+    padding: 0;
+}
+.ps-relative{
+    position: relative;
+}
+.ps-absolute{
+    position: absolute;
+}
+
+.rounded-50{
+    border-radius: 50%;
+}
+

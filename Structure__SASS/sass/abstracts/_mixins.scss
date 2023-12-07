@@ -1,0 +1,29 @@
+@mixin style-text($cl, $fz, $fw, $lh){
+    color: $cl;
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin button($mg, $pd){
+    margin: $mg;
+    padding: $pd;
+}
+
+@mixin flex($align-items, $justify-content){
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin sp-absolute($top, $left, $x, $y){
+    top: $top;
+    left: $left;
+    transform: translate($x, $y);
+}
+
+@mixin grid($grid-columns, $grid-gap){
+    display: grid;
+    grid-gap: $grid-gap;
+    grid-template-columns: $grid-columns;
+}
